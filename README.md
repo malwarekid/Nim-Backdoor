@@ -81,7 +81,7 @@ The script will generate a Nim program and compile it to a binary. The binary wi
 
 ## Contributors
 
-- [Your Name](https://github.com/malwarekid)
+- [Malwarekid](https://github.com/malwarekid)
 
 ## License
 
