@@ -17,6 +17,7 @@ The provided Python program, `Nim-Backdoor.py`, generates a Nim program that ope
 - **Command Execution:** Allows remote command execution via a netcat-like session.
 
 ## How to Use
+![Nim-Backdoor](https://github.com/user-attachments/assets/54924a2f-ae9a-41d3-b764-988f173212d2)
 
 1. **Clone the Repository:**
 
