@@ -57,6 +57,8 @@ while not re.match(r'^[\w\-. ]+$', output_name):
 
 if not nim_compiler_exists():
     print("\033[31mNim compiler not found.\033[0m")
+    print("\033[31mDownload it from here: https://nim-lang.org.\033[0m")
+    print("\033[31mIf the installation does not work, add the nim.exe file (on Windows)\nlocated in the /bin folder to the environment variables.\033[0m")
     exit(1)
 
 if os_type.lower() == 'linux':
