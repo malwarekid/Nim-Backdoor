@@ -34,24 +34,26 @@ print("\033[38;2;255;69;172m" + r'''
 ''' + "\033[0m")
 
 ip = input("\033[32mEnter IP address:\033[0m ")
-if not validate_ip(ip):
+while not validate_ip(ip):
     print("\033[31mInvalid IP address.\033[0m")
-    exit(1)
+    ip = input("\033[32mEnter IP address:\033[0m ")
+    
 
 port = input("\033[32mEnter your Port number:\033[0m ")
-if not validate_port(port):
+while not validate_port(port):
     print("\033[31mInvalid port number.\033[0m")
-    exit(1)
+    port = input("\033[32mEnter your Port number:\033[0m ")
 
 os_type = input("\033[36mChoose your OS\033[0m (\033[32mlinux\033[0m or \033[34mwindows\033[0m): ")
-if not validate_os(os_type):
+while not validate_os(os_type):
     print("\033[31mInvalid OS type.\033[0m")
-    exit(1)
+    os_type = input("\033[36mChoose your OS\033[0m (\033[32mlinux\033[0m or \033[34mwindows\033[0m): ")
+    
 
 output_name = input("\033[36mEnter your output file name:\033[0m ")
-if not re.match(r'^[\w\-. ]+$', output_name):
+while not re.match(r'^[\w\-. ]+$', output_name):
     print("\033[31mInvalid file name.\033[0m")
-    exit(1)
+    output_name = input("\033[36mEnter your output file name:\033[0m ")
 
 if not nim_compiler_exists():
     print("\033[31mNim compiler not found.\033[0m")
